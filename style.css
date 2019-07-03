@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+header{
+    text-align: center;
+    margin-top: 3em;
+}
+.main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border: 0.1em solid lightgray;
+}
+.answer-chioce {
+    margin-bottom: .5em;
+}
+.progress{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0 auto;
+}
+.progress li {
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+.vr-img {
+    margin-bottom: 1em;
+}
+.submit-button {
+    width:100%;
+    margin: .5em 0 1em;
+}    
+ label{
+    margin-left: .5em;
+}
+.success{
+    background-color: lightgreen;
+}
+.failure {
+    background-color: lightcoral;
+}
+.message{
+    border: 1px solid darkgray;
+    padding: .5em;
+}
