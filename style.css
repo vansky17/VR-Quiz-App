@@ -14,8 +14,12 @@ header{
     justify-content: center;
     align-items: center;
     width: 50%;
+    position: relative;
     margin: 0 auto;
     border: 0.1em solid lightgray;
+}
+form {
+    width:50%;
 }
 .answer-chioce {
     margin-bottom: .5em;
@@ -33,6 +37,15 @@ header{
 .vr-img {
     margin-bottom: 1em;
 }
+.img-license {
+    font-size: .6em;
+    position: relative;
+    top: -3.5em;
+    color: white;
+}
+.img-license a:visited{
+    color: white ;
+}
 .submit-button {
     width:100%;
     margin: .5em 0 1em;
@@ -48,5 +61,29 @@ header{
 }
 .message{
     border: 1px solid darkgray;
+    text-align: center;
     padding: .5em;
+}
+.correct {
+    color: lightgreen;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.correct::before {
+    content: 'Correct!'
+}
+.result li {
+    font-size: 2em;
+    font-weight: 700;
+    
+}
+
+/* remove in final */
+button {
+    cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: black;
 }

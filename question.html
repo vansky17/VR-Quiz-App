@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>VR Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>VR Quiz App</h1>
+    </header>
+    <!-- Question Section -->
+   <!--  The actual Quiz section dipslays always the question in the middle of the screen, followed by an image (which may give some hint to the correct answer).
+    All in all there will be 10 such Quiz sections (one per question) The user can then select one of four possible answers. Only one of them is the correct one.
+    In the code implementation phase, each of the question topic with its four possible answer choices will be stored as an object in an array.
+    The contents of the entire Quiz App is as follows:
+
+1 What does VR stand for?
+    [Virtual Religion]
+    [Virtual Reality] - correct answer
+    [Vertical Realization]
+    [Variable Recursion]
+
+2. What is Virtual Reality?
+    [An organizational form aiming to optimize the supply chain of a company]
+    [A programming language created by Microsoft]
+    [The future of web development!] 
+    [The use of computer technology to create an interactive simulated environment] – correct answer
+
+3. What does HMD stand for?
+	[Hey My Dude]
+	[Hold My Device]
+	[Head Mounted Device]
+    [Head Mounted Display] - correct answer
+    
+4. How are VR Headsets powered?
+	[Via Internet]
+	[Using solar cells]
+    [Smartphone, Computer, Game Console, Battery] - correct answer
+    [A VR power core]
+
+5. What is Cyberspace:
+    [A synonym for "cloud computing"]
+    [Virtual, computer-generated space or virtual world. ] - correct answer
+    [Biscuits with intoxicating substances (such as marijuana).]
+    [An alternative spelling for the territory in Siberia]
+
+6. At what resolution will VR displays be indistinguishable from reality?
+    [4k resolution]
+    [8k resolution]
+    [16k resolution] - correct answer
+    [24k resolution]
+
+7 What is foveated rendering
+    [A technique  to reduce the rendering workload in the peripheral vision] – correct answer
+    [Depiction of an eye in the anatomy]
+    [A medical synonym for Astigmatism]
+    [A game engine for video games]
+
+8. What is Field of View (FOV)
+    [A field in the nature to contemplate a beautiful scenery]
+    [The name of a small village in France]
+    [The area visible when looking through the microscope]
+    [The open observable area a human can see through his eyes] – correct answer
+
+9. What is the typical FOV of the human vision?
+    [75 degrees]
+    [120 degrees]
+    [180 degrees] -correct answer
+    [360 degrees]
+
+10. What is currently the best VR device on the market?
+	[HTC VivePro]
+	[Oculus Rift S (Lenovo)]
+	[Google Cardboard]
+    [Valve Index] - correct answer 
+    
+    On the bottom right, a progress indication is shown with the current question number and the score achieved so far. 
+    The user has to click the Submit Answer button to confirm his/her choice.-->
+
+    <section class="main">
+        <h2 id="question">What does VR stand for?</h2>
+        <img class="vr-img" src="https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="50%" height="284px"/>
+        <div class="img-license"><a href="https://www.pexels.com/photo-license/">image by pexels.com</a></div>
+        <form id="form">
+            <div class="answer-chioce"><input type="radio" name="option" id="option0"><label for="option0">Virtual Religion</label>
+            </div>
+            <div class="answer-chioce"><input type="radio" name="option" id="option1"><label for="option1">Virtual Reality</label>
+            </div>
+            <div class="answer-chioce"><input type="radio" name="option" id="option2"><label for="option2">Vertical Realization</label>
+            </div>
+            <div class="answer-chioce"><input type="radio" name="option" id="option3"><label for="option3">Variable Recursion</label>
+            </div>
+            <a href="answer.html"><button class="submit-button answer" type="button">Submit Answer</button></a>                            
+        </form>
+    </section>
+    <article>
+        <ul class="progress">
+            <li>Question: 1 of 10 </li>
+            <li>Score: 0</li>
+           </ul>
+    </article> 
+    </body>
+</html>
