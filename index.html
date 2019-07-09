@@ -2,8 +2,13 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Ivan, student at Bloc">
+    <meta name="description" content="A quiz about virtual reality">
     <title>VR Quiz App</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,16 +17,52 @@
     <header>
         <h1>VR Quiz App</h1>
     </header>
-    <!-- Starter Section -->
-    <!-- The user is greeted by a starter page with a small hint on the topic to make it clear that the following is a quiz. A "Let's go" button starts the quiz.
-    The HTMl in this section is displayed only initially, and will not be created dynamically, but will be replaced by the next dynamically created sections. -->
-    <section class="main">
+    <!-- Start Section -->
+    <section class="main start-page" role="start-page">
         <h2>Ready for the Next Dimension?</h2> 
         <img class="vr-img" src="https://images.unsplash.com/photo-1518252283669-e5cbf7cd40af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="A new dimension" width="50%"/>
         <div class="img-license"><a href="https://unsplash.com/license">image by unsplash.com</a></div>
         <form id="form">
-            <a href="question.html"><button class="submit-button" type="button"> Let's find out!</button> </a>
+            <button class="submit-start" type="button"> Let's find out!</button> 
         </form> 
     </section>
+    <!-- Questions Section -->
+    <section class="main questions hidden" role="questions">
+        <ul class="progress-bar">
+            <li class="single-bar glow"></li>
+        </ul>
+        <h2 id="question-title"></h2>
+        <img class="vr-img"  width="50%"/>
+        <div class="img-license"></div>
+        <form id="form" class="form">
+            <div class="answer-chioce"><input type="radio" name="option" id="option0"><label for="option0"></label>
+            </div>
+            <div class="answer-chioce"><input type="radio" name="option" id="option1"><label for="option1"></label>
+            </div>
+            <div class="answer-chioce"><input type="radio" name="option" id="option2"><label for="option2"></label>
+            </div>
+            <div class="answer-chioce"><input type="radio" name="option" id="option3"><label for="option3"></label>
+            </div>
+            <button class="submit-answer" type="button"></button>                                                     
+            <button class="submit-next hidden" type="button"></button>                                                     
+        </form>
+    </section>
+    <article class="score hidden" role="show-score">
+        <ul class="progress-score"> 
+            <li class="show-score">Score: 0</li>
+           </ul>
+    </article> 
+    <!-- Final Result -->
+    <section class="main result hidden fade-in" role="final-result">
+        <h2></h2>
+        <ul class="final-result">
+            <li></li>
+        </ul>
+        <form id="form" class="form">
+            <button class="submit-restart" type="button">Restart Quiz</button>   
+         </form>     
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>

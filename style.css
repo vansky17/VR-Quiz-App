@@ -1,14 +1,39 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), 
+    url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) repeat; 
+    color: white;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;   
+}    
 li {
     list-style: none;
 }
-header{
+header h1{
     text-align: center;
-    margin-top: 3em;
+    margin: 2.5em 0;
+}
+.progress-bar{
+    padding:0;
+    display:flex; 
+    width:111%; 
+    height:.5em;
+    margin:-.5em auto 0 auto;
+}
+.single-bar{
+    background-color: lightgreen; 
+    border: 1px solid black; 
+    width: 9%;
 }
 .main {
+    background: rgba(0, 0, 0, 0.7);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -16,21 +41,27 @@ header{
     width: 50%;
     position: relative;
     margin: 0 auto;
-    border: 0.1em solid lightgray;
+    box-shadow: inset 0 0 7px #048632;
+}
+.hidden {
+    display: none;
 }
 form {
-    width:50%;
+    width: 50%;
 }
 .answer-chioce {
     margin-bottom: .5em;
+} 
+label{
+    cursor: pointer;
 }
-.progress{
+.progress-score{
     display: flex;
     justify-content: flex-end;
     width: 50%;
     margin: 0 auto;
 }
-.progress li {
+.progress-score li {
     padding-top: 0.5em;
     padding-left: 1em;
 }
@@ -45,11 +76,7 @@ form {
 }
 .img-license a:visited{
     color: white ;
-}
-.submit-button {
-    width:100%;
-    margin: .5em 0 1em;
-}    
+}   
  label{
     margin-left: .5em;
 }
@@ -60,30 +87,131 @@ form {
     background-color: lightcoral;
 }
 .message{
-    border: 1px solid darkgray;
     text-align: center;
     padding: .5em;
+    box-shadow: inset 0 0 14px orangered;
 }
 .correct {
     color: lightgreen;
     font-size: 1.5em;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: inset 0 0 17px #048632;
 }
+.correct-answer {
+    color: #048632;  
+    text-shadow:  1px 1px 3px lightgreen;
+}
+.wrong-answer{
+    color: orangered;
+    font-weight: 500;
+}
+
+ /* Buttons */
+.submit-answer,
+.submit-next,
+.submit-start,
+.submit-restart {
+    width:100%;
+    margin: .5em 0 1em;
+} 
 .correct::before {
     content: 'Correct!'
 }
+.submit-answer::before{
+    content: 'Submit Answer';
+}
+.submit-next::before{
+    content: 'Next';
+}
 .result li {
     font-size: 2em;
-    font-weight: 700;
-    
+    font-weight: 700;   
+}
+button {
+    background: transparent;
+    box-shadow: inset 0 0 17px #B2B4B5;
+    padding: 0.2em 0 0.2em;
+    color: #B2B4B5;
+    cursor: pointer;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    transition: all ease-in 0.3s;
+}
+button:hover{
+    background: #B2B4B5;
+    color:black;
+}
+.button:active {
+    box-shadow: inset 0 0 17px #B2B4B5;
+}
+/* buttons end */
+.show-score, .final-result{
+    font-size: 1.5em;
+    font-family: 'Orbitron', sans-serif;
+}
+.final-result{
+    color:lightgreen;
+    padding: 0.4em;
+    box-shadow: inset 0 0 17px #048632;
+}
+.result h2{
+    font-size:1.8em;
 }
 
-/* remove in final */
-button {
-    cursor: pointer;
-}
-button a {
-    text-decoration: none;
-    color: black;
-}
+/* Animations */
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px #aef4af;
+    }
+    to {
+      box-shadow: 0 0 10px 10px #aef4af;
+    }
+  }
+  .glow {
+      animation: glow ease-in-out .5s forwards alternate;
+      animation-iteration-count: 2;
+  }
+.fade-in {
+    animation: fadeIn ease .7s;
+  }
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  /* Media queries */
+  @media screen and (max-width:720px){
+    body {
+        font-size: 0.8em;
+    }
+    .main{
+        width: 90%;
+    }
+    .progress-score{
+        width: 90%;
+    }
+  }
+  @media screen and (min-width:721px){
+    .main{
+        width: 70%;
+    }
+    .progress-score{
+        width: 70%;
+    }
+  }
+  @media screen and (min-width:1020px){
+    .main{
+        width: 50%;
+    }
+    .progress-score{
+        width: 50%;
+    }
+  }
+
