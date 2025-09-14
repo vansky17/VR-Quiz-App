@@ -10,7 +10,7 @@ const QUESTIONS = [
         correct: 'Virtual Reality'          
     },
     { 
-        questionTitle: 'What is Virtual Reality?',
+        questionTitle: 'What is Extended Reality?',
         imageSrc: 'https://cdn.pixabay.com/photo/2018/05/18/11/09/virtual-reality-3410937_960_720.jpg', 
         altAttr: 'A man with a VR HMD',
         imgLicense: '<a href="https://pixabay.com/service/terms/#license">image by pixabay.com</a>',
@@ -26,23 +26,23 @@ const QUESTIONS = [
         correct: 'Head Mounted Display'          
     },
     { 
-        questionTitle: 'How are VR Headsets powered?',
+        questionTitle: 'How are XR Headsets powered?',
         imageSrc: 'https://images.pexels.com/photos/256302/pexels-photo-256302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
         altAttr: 'Electricity',
         imgLicense: '<a href="https://www.pexels.com/photo-license/">image by pexels.com</a>',
-        options: ['Via Internet', 'Using solar cells','Smartphone, Computer, Game Console, Battery','Via VR power core'],
+        options: ['Via Internet', 'Using solar cells','Smartphone, Computer, Game Console, Battery','Via XR nuclear power core'],
         correct: 'Smartphone, Computer, Game Console, Battery'          
     },
      { 
-        questionTitle: 'What is Cyberspace?',
+        questionTitle: 'What is Metaverse?',
         imageSrc: 'https://cdn.pixabay.com/photo/2018/04/01/18/46/fantasy-3281738_960_720.jpg',
         altAttr: 'A representaion of cyberspace',
         imgLicense: '<a href="https://pixabay.com/service/terms/#license">image by pixabay.com</a>',
-        options: ['A synonym for "cloud computing"','Virtual, computer-generated space or virtual world','Biscuits with intoxicating substances (such as marijuana)','An alternative spelling for the territory in Siberia'],
+        options: ['A synonym for "cloud computing"','Virtual, computer-generated space or virtual world','Biscuits with intoxicating substances (such as marijuana)','A place where Zuckerberg had no legs until patch 2.0'],
         correct: 'Virtual, computer-generated space or virtual world'          
     },
     { 
-        questionTitle: 'At what resolution will VR be indistinguishable from reality?',
+        questionTitle: 'At what resolution will XR be indistinguishable from reality?',
         imageSrc: 'https://cdn.pixabay.com/photo/2017/03/12/02/20/triangle-2136288_960_720.jpg',
         altAttr: 'A representaion of cyberspace in high resolution',
         imgLicense: '<a href="https://pixabay.com/service/terms/#license">image by pixabay.com</a>',
@@ -67,20 +67,28 @@ const QUESTIONS = [
     },
     { 
         questionTitle: 'What is the typical FOV of the human vision?',
-        imageSrc: 'https://cdn.pixabay.com/photo/2015/03/26/10/24/eye-691269_960_720.jpg',
+        imageSrc: 'https://cdn.pixabay.com/photo/2024/05/03/14/46/ai-generated-8737203_1280.png',
         altAttr: 'A blue human eye',
         imgLicense: '<a href="https://pixabay.com/service/terms/#license">image by pixabay.com</a>',
         options: ['75 degrees','120 degrees','180 degrees','360 degrees'],
         correct: '180 degrees'          
     },
     { 
-        questionTitle: 'What is the current best consumer VR device?',
-        imageSrc: 'https://cdn.pixabay.com/photo/2018/05/02/14/53/virtual-reality-3368729_960_720.jpg',
+        questionTitle: 'What is the current best XR device?',
+        imageSrc: 'https://cdn.pixabay.com/photo/2023/06/11/08/33/ai-generated-8055461_1280.jpg',
         altAttr: 'A man with a VR HMD',
         imgLicense: '<a href="https://pixabay.com/service/terms/#license">image by pixabay.com</a>',
-        options: ['HTC VivePro','Oculus Rift S aka Lenovo','Google Cardboard','Valve Index'],
-        correct: 'Valve Index'          
-    }  
+        options: ['Zuckerbergs expensive toy aka Meta Quest 3','The bankruptcy simulator aka Varjo XR-4','The most expensive Netflix player aka Apple Vision Pro','Google Cardboard, the pizza box edition'],
+        correct: 'Google Cardboard, the pizza box edition'          
+    },
+    { 
+        questionTitle: 'Which engine is most in use for XR aplications?',
+        imageSrc: 'https://cdn.pixabay.com/photo/2023/06/11/08/32/ai-generated-8055454_960_720.jpg',
+        altAttr: 'A man with a VR HMD',
+        imgLicense: '<a href="https://pixabay.com/service/terms/#license">image by pixabay.com</a>',
+        options: ['Unity','Unreal Engine','PowerPoint, because that is what management uses','CryEngine, of course'],
+        correct: 'PowerPoint, because that is what management uses'          
+    }
 ];
 
 //Start the quiz by hiding the start page, show the question form, render the question and show score section
